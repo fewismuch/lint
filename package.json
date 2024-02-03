@@ -1,0 +1,30 @@
+{
+  "name": "@carbontian/standard",
+  "version": "0.0.1",
+  "description": "code standard,include eslint,stylelint,prettier,tsconfig",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public",
+    "tag": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fewismuch/standard.git"
+  },
+  "keywords": [
+    "standard",
+    "code standard",
+    "eslint"
+  ],
+  "author": "fewismuch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fewismuch/standard/issues",
+    "email": "779205344@qq.com"
+  },
+  "homepage": "https://github.com/fewismuch/standard#readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
