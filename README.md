@@ -1,2 +1,2 @@
-# fabric
+# standard
 test
