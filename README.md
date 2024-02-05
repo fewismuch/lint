@@ -1,2 +1,2 @@
-# standard
-test
+# lint
+code lint
