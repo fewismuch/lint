@@ -16,7 +16,7 @@ yarn add @rainetian/lint -D
 
 # Usage
 
-Create a new `.npmrc` file (if not) and add the following:
+Create a new `.npmrc` file (if it doesn't exist) and add the following:
 ```shell
 lockfile=false
 resolution-mode=highest
