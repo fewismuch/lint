@@ -1,7 +1,7 @@
 {
   "name": "@rainetian/lint",
-  "version": "0.0.14",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Stylelint config, ESlint config, Prettier config for fewismuch",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -9,8 +9,8 @@
     "build": "father build",
     "build:deps": "father prebundle",
     "prepublishOnly": "father doctor && npm run build",
-    "lint": "eslint \"{src}/**/*.{js,jsx,ts,tsx}\" --fix",
-    "lint:style": "stylelint \"{src}/**/*.{css,less,js,jsx,ts,tsx}\" --fix"
+    "lint": "eslint src/**/*.{js,jsx,ts,tsx} --fix",
+    "lint:style": "stylelint src/**/*.{css,less,js,jsx,ts,tsx} --fix"
   },
   "repository": {
     "type": "git",
@@ -20,19 +20,19 @@
     "lint",
     "eslint",
     "stylelint",
-    "code standard",
-    "standard"
+    "code standard"
   ],
   "author": "fewismuch",
   "license": "MIT",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.8.0",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-config-standard": "^17.1.0",
@@ -43,28 +43,24 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
-    "eslint-plugin-standard": "^5.0.0",
-    "postcss": "^8.4.29",
+    "postcss": "^8.3.5",
     "prettier": "^3.0.3",
     "stylelint": "^15.11.0",
     "stylelint-config-css-modules": "4.2.0",
     "stylelint-config-recommended-less": "^2.0.0",
+    "stylelint-config-recommended-scss": "^13.1.0",
     "stylelint-config-standard": "^34.0.0",
     "stylelint-less": "^2.0.0",
     "stylelint-order": "^6.0.3",
     "stylelint-prettier": "^4.0.2",
+    "stylelint-scss": "^5.3.2",
     "typescript": "^5.0.2"
   },
   "devDependencies": {
     "@types/node": "^20.8.10",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.8.0",
     "father": "^4.1.7",
     "husky": "^8.0.3",
     "lint-staged": "^15.0.2"
-  },
-  "peerDependencies": {
-    "stylelint": ">= 15.11.0 < 16.0.0"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [

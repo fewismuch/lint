@@ -1,12 +1,16 @@
 export default {
   $schema: 'https://json.schemastore.org/stylelintrc',
-  plugins: ['stylelint-order', 'stylelint-less', 'stylelint-prettier'],
+  plugins: ['stylelint-order', 'stylelint-scss', 'stylelint-less', 'stylelint-prettier'],
   extends: [
     'stylelint-config-standard',
     'stylelint-config-css-modules',
     'stylelint-prettier/recommended',
   ],
   overrides: [
+    {
+      extends: 'stylelint-config-recommended-scss',
+      files: ['**/*.less'],
+    },
     {
       extends: 'stylelint-config-recommended-less',
       files: ['**/*.less'],
