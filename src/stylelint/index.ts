@@ -21,9 +21,11 @@ export default {
     'prettier/prettier': true,
     // 命名规范
     'selector-class-pattern': [
-      '^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
+      '^([a-z][a-z0-9]*)(-[a-z0-9]+)*$', // 支持 kebab-case 类名
+      '^([a-z][a-z0-9]*)__([a-z0-9]+)*$', // 支持 BEM 元素
+      '^([a-z][a-z0-9]*)--([a-z0-9]+)*$', // 支持 BEM 修饰符
       {
-        message: 'Expected class selector to be kebab-case',
+        message: 'Expected class selector to be kebab-case, BEM element, or BEM modifier',
       },
     ],
     // 禁止声明前有空行(mix后不用加空行)
