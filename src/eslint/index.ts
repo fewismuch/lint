@@ -17,6 +17,7 @@ export default {
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint', 'react-refresh', 'react'],
+  ignorePatterns: ['node_modules', 'dist'],
   rules: {
     'react/react-in-jsx-scope': 'off', // 允许在 JSX 文件中省略 React 的引入，因为有些环境会自动引入 React
     'max-lines-per-function': ['error', { max: 500 }], // 设置单个函数的最大行数为500行，超过则报错
