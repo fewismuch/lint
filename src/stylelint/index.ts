@@ -19,6 +19,8 @@ export default {
   rules: {
     // 开启 Prettier 自动格式化功能
     'prettier/prettier': true,
+    // 命名规范  bem规范插件 https://github.com/simonsmith/stylelint-selector-bem-pattern
+    'selector-class-pattern': null,
     // 禁止声明前有空行(mix后不用加空行)
     'declaration-empty-line-before': 'never',
     // 禁止在具有较高优先级的选择器后出现被其覆盖的较低优先级的选择器
