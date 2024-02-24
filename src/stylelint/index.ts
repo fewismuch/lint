@@ -19,19 +19,12 @@ export default {
   rules: {
     // 开启 Prettier 自动格式化功能
     'prettier/prettier': true,
-    // 命名规范
-    'selector-class-pattern': [
-      '^([a-z][a-z0-9]*)(-[a-z0-9]+)*$', // 支持 kebab-case 类名
-      '^([a-z][a-z0-9]*)__([a-z0-9]+)*$', // 支持 BEM 元素
-      '^([a-z][a-z0-9]*)--([a-z0-9]+)*$', // 支持 BEM 修饰符
-      {
-        message: 'Expected class selector to be kebab-case, BEM element, or BEM modifier',
-      },
-    ],
     // 禁止声明前有空行(mix后不用加空行)
     'declaration-empty-line-before': 'never',
     // 禁止在具有较高优先级的选择器后出现被其覆盖的较低优先级的选择器
     'no-descending-specificity': null,
+    // 忽略rpx微信小程序中
+    'unit-no-unknown': [true, { ignoreUnits: ['rpx'] }],
     // 规则顺序
     'order/properties-order': [
       'position',
