@@ -55,6 +55,26 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.test {
+  --root-color: red;
+
+  @apply p-2 text-gray-900 font-semibold;
+}
+
+.menu {
+  @apply p-2 text-gray-900 font-semibold;
+}
+
+@keyframes abc {
+  from {
+    transform: scale(0.9);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

@@ -6,7 +6,6 @@ export default {
     'stylelint-config-css-modules',
     'stylelint-prettier/recommended',
   ],
-  customSyntax: 'postcss-styled-syntax',
   overrides: [
     {
       extends: 'stylelint-config-recommended-scss',
@@ -15,6 +14,10 @@ export default {
     {
       extends: 'stylelint-config-recommended-less',
       files: ['**/*.less'],
+    },
+    {
+      customSyntax: 'postcss-styled-syntax',
+      files: ['**/*.tsx', '**/*.jsx'],
     },
   ],
   rules: {
