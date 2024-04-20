@@ -6,10 +6,11 @@ export default {
     'stylelint-config-css-modules',
     'stylelint-prettier/recommended',
   ],
+  customSyntax: 'postcss-styled-syntax',
   overrides: [
     {
       extends: 'stylelint-config-recommended-scss',
-      files: ['**/*.less'],
+      files: ['**/*.scss'],
     },
     {
       extends: 'stylelint-config-recommended-less',
@@ -21,6 +22,8 @@ export default {
     'prettier/prettier': true,
     // 命名规范  bem规范插件 https://github.com/simonsmith/stylelint-selector-bem-pattern
     'selector-class-pattern': null,
+    // 禁止使用未知的伪类选择器
+    'custom-property-pattern': null,
     // 禁止声明前有空行(mix后不用加空行)
     'declaration-empty-line-before': 'never',
     // 禁止在具有较高优先级的选择器后出现被其覆盖的较低优先级的选择器
@@ -106,5 +109,5 @@ export default {
       'transform',
     ],
   },
-  ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts', 'dist/**/*', 'node_modules/**/*'],
+  ignoreFiles: ['**/*.js', '**/*.ts', 'dist/**/*', 'node_modules/**/*'],
 }

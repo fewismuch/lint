@@ -1,3 +1,6 @@
+// 可以使用环境变量生成不同的配置
+// const isTypeAwareEnabled = process.env.DISABLE_TYPE_AWARE === undefined;
+
 export default {
   $schema: 'https://json.schemastore.org/eslintrc',
   env: {

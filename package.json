@@ -1,7 +1,7 @@
 {
   "name": "@rainetian/lint",
-  "version": "0.1.4",
-  "description": "Stylelint config, ESlint config, Prettier config for fewismuch",
+  "version": "0.1.5",
+  "description": "Stylelint config, ESLint config, Prettier config for fewismuch",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -44,6 +44,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "postcss": "^8.3.5",
+    "postcss-styled-syntax": "^0.6.4",
     "prettier": "^3.0.3",
     "stylelint": "^15.11.0",
     "stylelint-config-css-modules": "4.2.0",
@@ -60,7 +61,8 @@
     "@types/node": "^20.8.10",
     "father": "^4.1.7",
     "husky": "^8.0.3",
-    "lint-staged": "^15.0.2"
+    "lint-staged": "^15.0.2",
+    "styled-components": "^6.1.8"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
